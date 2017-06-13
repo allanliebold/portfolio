@@ -1,0 +1,13 @@
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  max-width: 80%;
+}
+
+#projects li {
+  display: inline-block;
+}

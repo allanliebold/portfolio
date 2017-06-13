@@ -1,0 +1,27 @@
+header h1 {
+  float: left;
+}
+
+nav ul {
+  display: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 5px 10px;
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 640px) {
+  nav ul {
+    display: block;
+  }
+
+  nav li {
+    display: inline;
+  }
+
+  nav span.icon-menu {
+    display: none;
+  }
+};
