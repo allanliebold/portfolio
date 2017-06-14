@@ -10,10 +10,9 @@ function Project(rawDataObj){
 }
 
 Project.prototype.toHtml = function(){
-  var $newProject = $('project.template').clone();
+  var $newProject = $('.template').clone();
   $newProject.removeClass('template');
 
-  if (!this.createdOn) $newProject.addClass('draft');
   $newProject.find('h1').html(this.title);
   $newProject.find('.project-link a').attr('href', this.projUrl);
   $newProject.find('.project-body').html(this.body);
