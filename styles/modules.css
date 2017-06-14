@@ -1,0 +1,40 @@
+header h1 {
+  float: left;
+}
+
+nav ul {
+  display: none;
+}
+
+nav li {
+  display: inline;
+  margin: 5px 10px;
+  font-size: 1.5em;
+}
+
+.icon-menu {
+  float: right;
+  font-size: 2em;
+}
+
+nav:hover ul{
+  display: block;
+}
+
+@media only screen and (min-width: 640px) {
+  nav ul {
+    display: block;
+    float: right;
+  }
+
+@media only screen and (max-width: 360px) {
+  #projects {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+  nav span.icon-menu {
+    display: none;
+  }
+};
