@@ -1,9 +1,10 @@
 img {
   max-width: 100%;
+  overflow: hidden;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 a {
