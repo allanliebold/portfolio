@@ -35,12 +35,14 @@ nav ul {
 
 nav li {
   display: inline;
-  margin: 5px 10px;
+  margin: 20px;
+  padding: 10px 5px;
   font-size: 1.5em;
 }
 
 .icon-menu {
   float: right;
+  margin: 10px;
   font-size: 2em;
 }
 
@@ -48,27 +50,32 @@ nav li {
   margin-bottom: 20px;
 }
 
-nav:hover ul{
+.clicked a {
+  color: #444;
+  background-color: #999;
+}
+
+.clicked a:hover {
+  color: #444;
+}
+
+.shown {
   position: absolute;
   display: block;
-  padding: 5px;
   right: 0;
   background-color: #fff;
   width: 120px;
 }
 
+.shown a:hover {
+  color: #444;
+}
+
 @media only screen and (min-width: 640px) {
   nav ul {
     display: block;
-    float: right;
+    float: left;
   }
-
-@media only screen and (max-width: 360px) {
-  #projects {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-}
 
   nav span.icon-menu {
     display: none;
