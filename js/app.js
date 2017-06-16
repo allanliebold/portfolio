@@ -10,17 +10,12 @@ function Project(rawDataObj){
 }
 
 Project.prototype.toHtml = function(){
-  var $newProject = $('.template').clone();
-  $newProject.removeClass('template');
+  var template = $('#project-template').html();
+  var templateRender = Handlebars.compile(template);
+  this.daysAgo = parseInt((new Date() - new Date(this.createdOn))/60/60/24/1000);
+  this.createStatus = this.createdOn ? 'created ${this.daysAgo} days ago' : '(draft)';
 
-  $newProject.find('h1').html(this.title);
-  $newProject.find('.project-link a').attr('href', this.projUrl);
-  $newProject.find('.project-body').html(this.body);
-
-  $newProject.find('time').html('about ' + parseInt((new Date() - new Date(this.createdOn))/60/60/24/1000) + ' days ago');
-  $newProject.append('<hr>');
-  console.log($newProject);
-  return $newProject;
+  return templateRender(this);
 };
 
 rawData.sort(function(a, b) {
