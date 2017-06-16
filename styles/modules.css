@@ -2,6 +2,29 @@
   display: none;
 }
 
+article {
+  display: inline-block;
+  width: 90%;
+  max-width: 730px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  color: #000;
+  background-color: #f0f0f0;
+  overflow: auto;
+}
+
+article h1 {
+  display: block;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+article h2 {
+  font-style: italic;
+  font-size: .8em;
+}
+
 header h1 {
   float: left;
 }
@@ -12,31 +35,47 @@ nav ul {
 
 nav li {
   display: inline;
-  margin: 5px 10px;
+  margin: 20px;
+  padding: 10px 5px;
   font-size: 1.5em;
 }
 
 .icon-menu {
   float: right;
+  margin: 10px;
   font-size: 2em;
 }
 
-nav:hover ul{
+.project-link {
+  margin-bottom: 20px;
+}
+
+.clicked a {
+  color: #444;
+  background-color: #999;
+}
+
+.clicked a:hover {
+  color: #444;
+}
+
+.shown {
+  position: absolute;
   display: block;
+  right: 0;
+  background-color: #fff;
+  width: 120px;
+}
+
+.shown a:hover {
+  color: #444;
 }
 
 @media only screen and (min-width: 640px) {
   nav ul {
     display: block;
-    float: right;
+    float: left;
   }
-
-@media only screen and (max-width: 360px) {
-  #projects {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-}
 
   nav span.icon-menu {
     display: none;
