@@ -15,6 +15,11 @@ article {
 }
 
 #about {
+  width: 90%;
+  max-width: 730px;
+  margin: 20px;
+  padding: 20px;
+  height: 300px;
   color: #000;
   background-color: #f0f0f0;
 }

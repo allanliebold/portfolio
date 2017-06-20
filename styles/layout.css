@@ -21,3 +21,7 @@ nav ul {
 section li {
   display: inline-block;
 }
+
+#about li {
+  display: block;
+}
