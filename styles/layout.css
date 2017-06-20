@@ -1,5 +1,6 @@
 header {
   max-width: 812px;
+  min-width: 300px;
 }
 
 #wrap {

@@ -14,10 +14,9 @@ article {
   overflow: auto;
 }
 
-article h1 {
-  display: block;
-  width: 100%;
-  font-size: 1.5em;
+#about {
+  color: #000;
+  background-color: #f0f0f0;
 }
 
 article a {
@@ -31,6 +30,10 @@ article a:hover {
 article h2 {
   font-style: italic;
   font-size: .8em;
+}
+
+header {
+  padding-left: 20px;
 }
 
 header h1 {
@@ -79,7 +82,7 @@ nav li {
   color: #444;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 700px) {
   nav ul {
     display: block;
     float: left;

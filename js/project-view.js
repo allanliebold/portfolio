@@ -29,3 +29,29 @@ $(document).ready(function () {
   projectView.handleNav();
   projectView.showNav();
 })
+
+projectView.create = function() {
+  let project;
+  $('#projects').empty();
+
+  project = new Project({
+    title: $('#title').val(),
+    projUrl: $('#projUrl').val(),
+    body: $('#projBody').val(),
+  });
+
+  $('#projects').append(article.toHtml());
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+
+  $('#export-field').show();
+  $('#project-json').val(`${JSON.stringify(project)},`);
+};
+
+
+projectView.initIndexPage = function() {
+  Project.all.forEach(function(project) {
+    $('#projects').append(project.toHtml())
+  });
+}

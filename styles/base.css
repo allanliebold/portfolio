@@ -1,5 +1,6 @@
 body {
   color: #fff;
+  background-image: : url("/../img/cloudcity.jpg");
   background-color: #444;
 }
 
@@ -9,7 +10,13 @@ img {
 }
 
 h1 {
-  font-size: 3em;
+  margin-top: 5px;
+  font-size: 6vmin;
+}
+
+h2 {
+  display: block;
+  font-size: 3vmin;
 }
 
 a {
