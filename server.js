@@ -17,7 +17,7 @@ app.post('/projects', bodyParser, function(req, res) {
 })
 
 app.use(function(req, res, next) {
-  res.status(400);
+  res.status(404);
   res.send('404: File Note Found');
   next();
 });
