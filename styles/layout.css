@@ -1,5 +1,6 @@
 header {
   max-width: 812px;
+  min-width: 300px;
 }
 
 #wrap {
@@ -19,4 +20,9 @@ nav ul {
 
 section li {
   display: inline-block;
+}
+
+#about li {
+  margin: 20px; 
+  display: block;
 }
