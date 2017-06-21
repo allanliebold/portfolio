@@ -23,5 +23,6 @@ section li {
 }
 
 #about li {
+  margin: 20px; 
   display: block;
 }
