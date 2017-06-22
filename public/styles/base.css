@@ -1,6 +1,7 @@
 body {
   color: #fff;
-  background-image: : url("/../img/cloudcity.jpg");
+  background-image: url("/../img/cloudcity.jpg");
+  background-attachment: fixed;
   background-color: #444;
 }
 
