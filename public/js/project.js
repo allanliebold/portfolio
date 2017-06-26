@@ -49,7 +49,7 @@ Project.fetchAll = function() {
       localStorage.rawData = JSON.stringify(data);
       localStorage.ETag = serverETag;
       Project.loadAll(data);
-      projectView.initIndexPage();
+      app.projectView.initIndexPage();
     });
   }
 }
