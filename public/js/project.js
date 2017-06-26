@@ -1,4 +1,7 @@
 'use strict';
+var app = app || {};
+
+(function(module) {
 
 function Project(rawDataObj){
   this.title = rawDataObj.title;
@@ -50,3 +53,7 @@ Project.fetchAll = function() {
     });
   }
 }
+
+module.Project = Project;
+
+} (app));
