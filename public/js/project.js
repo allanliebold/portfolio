@@ -1,4 +1,7 @@
 'use strict';
+var app = app || {};
+
+(function(module) {
 
 function Project(rawDataObj){
   this.title = rawDataObj.title;
@@ -46,7 +49,11 @@ Project.fetchAll = function() {
       localStorage.rawData = JSON.stringify(data);
       localStorage.ETag = serverETag;
       Project.loadAll(data);
-      projectView.initIndexPage();
+      app.projectView.initIndexPage();
     });
   }
 }
+
+module.Project = Project;
+
+} (app));

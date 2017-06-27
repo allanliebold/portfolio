@@ -3,13 +3,19 @@
     "title": "DunGen & Dragons",
     "projUrl": "https://loaye.github.io/DunGen-Dragons/home/index.html",
     "createdOn": "2017-06-02",
-    "projBody": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>"
+    "projBody": "<p>A Dungeons & Dragons character generator.</p>"
   },
   {
-    "title": "Filler Project",
+    "title": "BusMall",
+    "projUrl": "https://ragnaroksedge.github.io/bus-mall/",
+    "createdOn": "2017-05-27",
+    "projBody": "<p>Class assignment.</p>"
+  },
+  {
+    "title": "Salmon Cookies",
     "projUrl": "#",
-    "createdOn": "2017-06-14",
-    "projBody": "<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>"
+    "createdOn": "2017-5-20",
+    "projBody": "<p>Class assignment.</p>"
   },
   {
     "title": "Filler Project",
