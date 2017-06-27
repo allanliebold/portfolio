@@ -1,0 +1,27 @@
+[
+  {
+    "job": "Code Fellows Student",
+    "location": "Seattle, WA",
+    "years": "2017"
+  }
+  {
+    "job": "Security Guard, JMETS",
+    "location": "Lemoore, CA",
+    "years": "2016-2017"
+  },
+  {
+    "job": "Petty Officer, US Navy",
+    "location": "Augusta, GA",
+    "years": "2009-2015"
+  },
+  {
+    "job": "Sales Associate, Circuit City",
+    "location": "Long Beach, CA",
+    "years": "2007-2009"
+  },
+  {
+    "job": "Film Student, CSU Long Beach",
+    "location": "Long Beach, CA",
+    "years": "2004-2007"
+  }
+]
