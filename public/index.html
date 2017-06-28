@@ -47,11 +47,13 @@
 
         <section id="about" class="tab-content">
             <h2>About Me</h2>
-            <ul>
+            <ul>Interests
               <li>Coding</li>
               <li>Movies</li>
               <li>Games</li>
             </ul>
+
+            <ul class="history">Places I've Lived</ul>
         </section>
       </main>
 
@@ -61,10 +63,12 @@
       <script src="js/jquery.js"></script>
       <script src="/vendor/scripts/handlebars.js"></script>
       <script src="/vendor/scripts/marked.js"></script>
+      <script src="/vendor/scripts/page.js"></script>
       <script src="js/project.js"></script>
+      <script src="js/about.js"></script>
       <script src="js/project-view.js"></script>
-      <script>
-        app.Project.fetchAll(app.projectView.initIndexPage);
-      </script>
+      <script src="js/controllers/projectController.js"></script>
+      <script src="js/controllers/aboutController.js"></script>
+      <script src="js/controllers/routes.js"></script>
   </body>
 </html>

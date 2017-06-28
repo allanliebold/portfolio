@@ -57,6 +57,10 @@ var app = app || {};
       $('#projects').append(project.toHtml())
     });
 
+    app.About.placesLived().forEach((place) =>
+      $('.history').append(` <li>${place}</li>`)
+    );
+
     projectView.handleNav();
   }
 
