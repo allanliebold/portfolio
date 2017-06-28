@@ -8,6 +8,8 @@ var app = app || {};
 
     $('section').hide();
     $('#projects').show();
+
+    app.repos.requestRepos(app.repoView.index);
   }
 
   module.projectController = projectController;

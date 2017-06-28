@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
 
+    <script id="repo-template" type="text/x-handlebars-template">
+      <ul>
+        <li>
+          <a href="{{html_url}}" target="_blank">
+            <h2>{{name}}</h2>
+          </a>
+          <p>Created: {{created_at}}</p>
+          <p>Description: {{description}}</p>
+        </li>
+      </ul>
+
     <script id="project-template" type="text/x-handlebars-template">
       <article>
         <a href={{projUrl}}><h1>{{title}}</h1></a>
@@ -34,16 +45,6 @@
 
       <main id="wrap">
         <section id="projects" class="tab-content">
-          <script id="repo-template" type="text/x-handlebars-template">
-            <ul>
-              <li>
-                <a href="{{html_url}}" target="_blank">
-                  <h2>{{name}}</h2>
-                </a>
-                <p>Created: {{created_at}}</p>
-                <p>Description: {{description}}</p>
-              </li>
-            </ul>
           <article class="template">
             <header>
               <div class="project-link">
@@ -70,7 +71,7 @@
       <footer>
 
       </footer>
-      <script src="/vendorscripts/jquery.js"></script>
+      <script src="/vendor/scripts/jquery.js"></script>
       <script src="/vendor/scripts/handlebars.js"></script>
       <script src="/vendor/scripts/marked.js"></script>
       <script src="/vendor/scripts/page.js"></script>
