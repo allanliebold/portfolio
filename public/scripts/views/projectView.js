@@ -65,4 +65,4 @@ var app = app || {};
   }
 
   module.projectView = projectView;
-} (app));
+})(app);

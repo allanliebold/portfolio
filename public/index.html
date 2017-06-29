@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
 
+    <script id="repo-template" type="text/x-handlebars-template">
+      <ul>
+        <li>
+          <a href="{{html_url}}" target="_blank">
+            <h2>{{name}}</h2>
+          </a>
+          <p>Created: {{created_at}}</p>
+          <p>Description: {{description}}</p>
+        </li>
+      </ul>
+
     <script id="project-template" type="text/x-handlebars-template">
       <article>
         <a href={{projUrl}}><h1>{{title}}</h1></a>
@@ -24,8 +35,8 @@
         <nav>
           <span class="icon-menu"></span>
           <ul class="menu-list">
-            <li class="tab" data-content="about"><a href="#about">About</li>
-            <li class="tab" data-content="projects"><a href="#projects">Projects</li>
+            <li class="tab" data-content="about"><a href="/about">About</li>
+            <li class="tab" data-content="projects"><a href="/projects">Projects</li>
             <li><a href="https://github.com/ragnaroksedge">Github</a></li>
             <li><a href="https://www.facebook.com/allan.liebold">Facebook</a></li>
           </ul>
@@ -60,15 +71,21 @@
       <footer>
 
       </footer>
-      <script src="js/jquery.js"></script>
+      <script src="/vendor/scripts/jquery.js"></script>
       <script src="/vendor/scripts/handlebars.js"></script>
       <script src="/vendor/scripts/marked.js"></script>
       <script src="/vendor/scripts/page.js"></script>
-      <script src="js/project.js"></script>
-      <script src="js/about.js"></script>
-      <script src="js/project-view.js"></script>
-      <script src="js/controllers/projectController.js"></script>
-      <script src="js/controllers/aboutController.js"></script>
-      <script src="js/controllers/routes.js"></script>
+
+      <script src="/scripts/models/project.js"></script>
+      <script src="/scripts/models/about.js"></script>
+
+      <script src="/scripts/views/githubToken.js"></script>
+
+      <script src="/scripts/models/repo.js"></script>
+      <script src="/scripts/controllers/projectController.js"></script>
+      <script src="/scripts/controllers/aboutController.js"></script>
+      <script src="/scripts/views/repoView.js"></script>
+      <script src="/scripts/views/projectView.js"></script>
+      <script src="/scripts/controllers/routes.js"></script>
   </body>
 </html>
